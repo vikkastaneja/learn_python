@@ -1,18 +1,12 @@
-def sample_function(need_what):
-    if need_what == 'integer':
-        return 1
-    elif need_what == 'string':
-        return 'sample'
-    elif need_what == 'float':
-        return 3.14
-    else:
-        return 'Not found'
+import sys
+sys.path.append('/Users/vtaneja/AI_ML/learn_python/modules')
+import my_module as m
 
 
-print(sample_function('string'))
-print(sample_function('integer'))
-print(sample_function('float'))
-print(sample_function('else'))
+print(m.sample_function('string'))
+print(m.sample_function('integer'))
+print(m.sample_function('float'))
+print(m.sample_function('else'))
 
 # Create a list and print it
 vehicles = ['car', 'truck', 'bus', 'bicycle','motorcycle']
