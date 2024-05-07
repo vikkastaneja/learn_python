@@ -58,6 +58,9 @@ print(s)
 s = {1,2,3,4,5,6,1}
 print(s)
 
+print('Frozen set')
+s = frozenset([1,2,3,4])
+
 '''
 Iterators examples using lists, and dictionaries
 '''
