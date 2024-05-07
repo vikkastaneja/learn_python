@@ -10,6 +10,7 @@ if __name__ == '__main__':
     print(next(it))
     print(next(it)) 
     print(next(it))
+    print(next(it))
     try:
         print(next(it))
     except StopIteration as st:
