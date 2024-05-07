@@ -45,3 +45,24 @@ for e in t:
     print(e)
 
 print(t[0],t[1],t[2])
+
+
+# Set
+s = set()
+s.add(1)
+s.add(1)
+
+print('******* SET ********')
+print(s)
+
+s = {1,2,3,4,5,6,1}
+print(s)
+
+'''
+Iterators examples using lists, and dictionaries
+'''
+list = ['a', 'b', 'c']
+itr = iter(list)
+print('****** iteration using iterator ****')
+for it in itr:
+    print(it)
