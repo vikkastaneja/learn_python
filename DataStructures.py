@@ -45,3 +45,12 @@ for e in t:
     print(e)
 
 print(t[0],t[1],t[2])
+
+'''
+Iterators examples using lists, and dictionaries
+'''
+list = ['a', 'b', 'c']
+itr = iter(list)
+print('****** iteration using iterator ****')
+for it in itr:
+    print(it)
