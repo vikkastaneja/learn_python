@@ -25,3 +25,7 @@ def generate_random_text_lines(num_words, min_length, max_length):
         word_length = random.randint(min_length, max_length)
         words.append(generate_random_word(word_length))
     return ' '.join(words)
+
+
+def test_main_module():
+    print(__name__)
