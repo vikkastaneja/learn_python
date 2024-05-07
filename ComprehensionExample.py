@@ -27,6 +27,7 @@ print(sqr)
 # Comprehension on dictionaries
 cities=['Mumbai', 'New York', 'Paris']
 countries=['India', 'USA', 'France']
+# Zip creates collection of tuples index-wise
 z = zip(cities, countries)
 print(type(z))
 for t in z:
