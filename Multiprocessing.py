@@ -2,20 +2,22 @@ import time
 import multiprocessing
 import multiprocessing.process
 # We will create two processes doing two different operation on the same set of data
-
+result = []
 def calculate_square(arr):
     for n in arr:
-        time.sleep(6)
-        print(n*n)
+        result.append(n*n)
+
+    print('square result: ' + str(result))
+
 
 def calculate_cube(arr):
     for n in arr:
-        time.sleep(4)
-        print(n*n*n)
+        result.append(n*n*n)
 
+    print('cube result: ' + str(result))
 
 if __name__ == "__main__":
-    arr = [1,2,3,4,5,6,7,7,8,9,4,2,4545464,34343,66743,32325667,677443,3346677,33453353,34366,343577,3345,88,4]
+    arr = [1,2,3,4,5,6,7,7,8,9]
     p1 = multiprocessing.Process(target=calculate_square, args=(arr,))
     p2 = multiprocessing.Process(target=calculate_cube, args=(arr,))
 
@@ -25,4 +27,5 @@ if __name__ == "__main__":
     p1.join()
     p2.join()
 
+    print('Global result: ' + str(result))
     print('Done!')
